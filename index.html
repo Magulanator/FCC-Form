@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/header-logo.jpg" alt="">
+    </header>
+    <div class="main">
+        <h1 id="title">Customer Satisfaction Survey</h1>
+        <p id="description">In order to help serve you better, please fill out this customer satisfaction survey.</p>
+        <form class="form" id="survey-form">
+            <label for="name" id="name-label">Name: </label>
+            <input type="text" class="contact" name="name" id="name" required placeholder="Enter your name">
+            </br>
+
+            <label for="email" id="email-label">Email Address: </label>
+            <input type="email" class="contact" name="email" id="email" required placeholder="Email Address">
+            </br>
+
+            <label for="number" id="number-label">Telephone Number: </label>
+            <input type="number" class="contact" name="telephone" id="number" placeholder="Telephone Number" min="1000000000" max="99999999999">
+            </br>
+            <p class="survey">How satified are you with...</p>
+            <div class="question">
+                <p>The service you recieved: </p>
+                <ul>
+                    <li>
+                        <input type="radio" name="service" id="very-satisfied" value="1">Very Satisfied</li>
+                    <li>
+                        <input type="radio" name="service" id="satisfied" value="2">Satisfied</li>
+                    <li>
+                        <input type="radio" name="service" id="neutral" value="3">Neutral</li>
+                    <li>
+                        <input type="radio" name="service" id="unsatisfied" value="4">Unatisfied</li>
+                    <li>
+                        <input type="radio" name="service" id=" very-unsatisfied" value="5">Very Unatisfied</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>Our company overall: </p>
+                <ul>
+                    <li>
+                        <input type="radio" name="company" id="very-satisfied" value="1">Very Satisfied</li>
+                    <li>
+                        <input type="radio" name="company" id="satisfied" value="2">Satisfied</li>
+                    <li>
+                        <input type="radio" name="company" id="neutral" value="3">Neutral</li>
+                    <li>
+                        <input type="radio" name="company" id="unsatisfied" value="4">Unatisfied</li>
+                    <li>
+                        <input type="radio" name="company" id=" very-unsatisfied" value="5">Very Unatisfied</li>
+                </ul>
+            </div>
+            <div class="question">
+                <p>Indicate below what information you would like more of from our company: </p>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="info" id="company-info" value="company-info">Company Info</li>
+                    <li>
+                        <input type="checkbox" name="info" id="employee-info" value="employee-info">Employee Info</li>
+                    <li>
+                        <input type="checkbox" name="info" id="bussiness-info" value="bussiness-info">Business Opportunities</li>
+                    <li>
+                        <input type="checkbox" name="info" id="education-info" value="education-info">Educational Opportunities</li>
+                </ul>
+            </div>
+            <!-- Survey End -->
+            <div class="question">
+                <p>How would you prefer to be notified?</p>
+                <select name="notified" class="dropdown" id="dropdown">
+                    <option value="">By email</option>
+                    <option value="">By telephone</option>
+                    <option value="">By text message</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="comments">Comments</label>
+                <textarea id="comments" class="comments" placeholder="Enter your comments."></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit" value="Submit survey" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
